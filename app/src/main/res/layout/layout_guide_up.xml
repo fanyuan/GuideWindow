@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--android:background="#f00000"-->
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:clickable="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <!--android:textStyle="bold"-->
+        <TextView
+            android:id="@+id/bt_next"
+            android:layout_width="@dimen/dp_144"
+            android:layout_height="@dimen/dp_44"
+            app:layout_constraintBottom_toTopOf="@id/icon_listen_music_tv_tip"
+            app:layout_constraintStart_toStartOf="@id/icon_listen_music_tv_tip"
+            app:layout_constraintEnd_toEndOf="@id/icon_listen_music_tv_tip"
+            android:layout_marginBottom="@dimen/dp_43"
+            android:gravity="center"
+            android:textSize="16sp"
+            android:textColor="@android:color/white"
+            android:background="@drawable/radius_rectangle_next"
+            android:text="我知道了"/>
+
+
+
+        <TextView
+            android:id="@+id/icon_listen_music_tv_tip"
+            android:layout_width="@dimen/dp_184"
+            android:layout_height="@dimen/dp_48"
+            app:layout_constraintBottom_toTopOf="@id/iv_vertical_line"
+            app:layout_constraintStart_toStartOf="@id/iv_vertical_line"
+            app:layout_constraintEnd_toEndOf="@id/iv_vertical_line"
+            android:background="@drawable/btn_shape_radius_dp6"
+            android:gravity="center"
+            android:text="还可以听歌赚钱哦"
+            android:textColor="@android:color/white"
+            android:textSize="16sp" />
+
+        <View
+            android:id="@+id/iv_vertical_line"
+            android:layout_width="@dimen/dp_1"
+            android:layout_height="@dimen/dp_44"
+            android:layout_centerHorizontal="true"
+            app:layout_constraintBottom_toTopOf="@id/iv_icon_dot_big"
+            app:layout_constraintStart_toStartOf="@id/iv_icon_dot_big"
+            app:layout_constraintEnd_toEndOf="@id/iv_icon_dot_big"
+            android:background="#f36040" />
+        <ImageView
+            android:id="@+id/iv_icon_dot_big"
+            android:layout_width="@dimen/dp_14"
+            android:layout_height="@dimen/dp_14"
+            app:layout_constraintTop_toTopOf="@id/start"
+            app:layout_constraintBottom_toTopOf="@id/start"
+            app:layout_constraintStart_toStartOf="@id/start"
+            app:layout_constraintEnd_toEndOf="@id/start"
+            android:src="@drawable/ovel_layer_list"
+            android:elevation="10dp"
+            />
+
+        <Button
+            android:id="@+id/start"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:text="baseview"/>
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</FrameLayout>
